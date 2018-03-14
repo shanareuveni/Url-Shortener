@@ -1,0 +1,12 @@
+<h1>Hello</h1>
+<p>put in your URL</p>
+<%= form_for @url do |f| %>
+<%=  f.label "url" %>
+<%= f.text_field :url_text %>
+<%= f.submit %>
+<% end %>
+
+
+<% @urls.each do |u| %>
+<%= u.url_text %>
+<% end %>
